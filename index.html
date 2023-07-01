@@ -2,6 +2,9 @@
 <html>
     <head>
         <meta charset="UTF-8">
+
+        <!-- to make content not fit whole content into the screen at once-->
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
         <title>Advance Digital Clock</title>
 
         <style>
@@ -18,8 +21,8 @@
             }
             main {
                 width: 100vw;
-                height: 100vh;
-                padding: 5em;
+                height: 100dvh;
+                padding: 5rem;
                 display: flex;
                 justify-content: left;
                 align-items: end; 
@@ -32,6 +35,10 @@
 
             .dark span {
                 color: rgb(206, 206, 206);
+            }
+
+            .time {
+                margin: .5rem 0;
             }
 
 
@@ -53,6 +60,23 @@
                 font-size: 2rem;
                 color: rgb(102, 102, 102);
             }
+
+            @media screen and (max-width: 800px) {
+
+
+                main {
+                    padding: 2rem;
+                }
+
+                time {
+                    font-size: 5rem;
+                }
+
+                .day, .date {
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                }
+            }
         </style>
     </head>
 
@@ -61,11 +85,13 @@
         <main class="light">
             <time class="datetime" datetime="">
                 <span class="day"></span>
-                <div class="time">
-                </div>
+                <div class="time"></div>
                 <span class="date"></span>
             </time>
         </main>
+
+
+
 
         
         
