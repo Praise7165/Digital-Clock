@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Advance Digital Clock</title>
+
+        <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Satoshi, Prompt, sans-serif;
+                font-size: 16px;
+            }
+            main {
+                width: 100vw;
+                height: 100vh;
+                padding: 5em;
+                display: flex;
+                justify-content: left;
+                align-items: end; 
+            }
+
+            .dark {
+                background-color: rgb(27, 30, 32);
+                color:rgb(187, 187, 187);
+            }
+
+            .dark span {
+                color: rgb(206, 206, 206);
+            }
+
+
+
+            .light {
+                background-color: rgb(245, 250, 255);
+            }
+
+            time {
+                font-size: 6.5rem;
+                font-weight: 200;
+            }
+
+            time span {
+                display: block;
+            }
+
+            .day, .date {
+                font-size: 2rem;
+                color: rgb(102, 102, 102);
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <main class="light">
+            <time class="datetime" datetime="">
+                <span class="day"></span>
+                <div class="time">
+                </div>
+                <span class="date"></span>
+            </time>
+        </main>
+
+        
+        
+        <script src="./script.js"></script>
+    </body>
+</html>
